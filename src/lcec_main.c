@@ -57,6 +57,7 @@
 #include "lcec_dems300.h"
 #include "lcec_omrg5.h"
 #include "lcec_ph3lm2rm.h"
+#include "lcec_meca500.h"
 
 #include "rtapi_app.h"
 
@@ -226,6 +227,9 @@ static const lcec_typelist_t types[] = {
 
   // multi axis interface
   { lcecSlaveTypeEM7004, LCEC_EM7004_VID, LCEC_EM7004_PID, LCEC_EM7004_PDOS, 0, NULL, lcec_em7004_init},
+  
+  // multi axis robot
+  { lcecSlaveTypeMeca500, LCEC_MECA500_VID, LCEC_MECA500_PID, LCEC_MECA500_PDOS, 0, NULL, lcec_meca500_init},
 
   // stoeber MDS5000 series
   { lcecSlaveTypeStMDS5k, LCEC_STMDS5K_VID, LCEC_STMDS5K_PID, 0, 0, lcec_stmds5k_preinit, lcec_stmds5k_init},

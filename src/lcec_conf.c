@@ -303,6 +303,9 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
 
   // multi axis interface
   { "EM7004", lcecSlaveTypeEM7004, NULL },
+  
+  // multi axis robot
+  { "MECA500", lcecSlaveTypeMeca500, NULL },
 
   // stoeber MDS5000 series
   { "StMDS5k", lcecSlaveTypeStMDS5k, slaveStMDS5kParams },
